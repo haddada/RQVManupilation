@@ -1,82 +1,146 @@
-<! doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<script src="js/lib/jquery.js"></script>
+<title>Services</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/lib/imagepreloader.js"></script>
+<script type="text/javascript">
+	preloadImages([	'images/menu1_active.gif',
+		'images/letter3.gif']);
+</script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
 </head>
-<body>
-	<div id="login">
-			<div id="login&inscrire">
-			<button id="login_user">login utilisateur</button>
-				<a href="#inscrire">s'inscrire</a>
-			</div>
-			<button id="login_agent">login agent</button>
-	</div>
-	<form id="utilisateur">
-	    <div id="utilisateur">
-	    		<a ancore="#inscrire">s'inscrire</a>
-	    		<label for="cin">CIN</label>
-				<input id="cin" type="tel" name="CIN" required></input><br>
-				<label for="nom">NOM</label>
-				<input id="nom" type="text" name="nom" required></input><br>
-				<label for="Prenom">Prenom</label>
-				<input id="Prenom" type="tel" name="Prenom"></input><br>
-				
-				<div id="adresse">ADRESSE
-				<label for="NUMERO">NUMERO</label>
-				<input id="NUMERO" type="NUMBER" name="NUMERO"></input><br>
-				<label for="rue">rue</label>
-				<input id="rue" type="text" name="rue"></input><br>
-				<label for="ville">ville</label>
-				<input id="ville" type="text" name="ville"></input><br>
-				<label for="codepostale">codepostale</label>
-				<input id="codepostale" type="NUMBER" name="codepostale"></input><br>
+<body id="page3">
+<div class="body1">
+	<div class="body2">
+		<div class="main">
+<!-- header -->
+			<header>
+				<div class="wrapper">
+					<h1><a href="index.html" id="logo">Declare</a></h1>
 				</div>
-
-				<label for="telephone">Téléphone</label>
-				<input id="telephone" name="telephone" type="tel">
-				<button id="submit" type="submit">envoyer</button>
-				
-		</div>
-		<div id="old_declaration"></div>
-	</form>
-
-	<form id="declaration">
-		<div id="declaration">
-			<label for="Titre">Titre</label>
-			<input id="Titre" type="text" name="Titre" required></input><br>
-			<label for="date">date</label>
-			<input id="date" type="date" name="date" ></input><br>
-			
-			<div id="adresse">lieuetat
-				<label for="NUMERO">NUMERO</label>
-				<input id="NUMERO" type="NUMBER" name="NUMERO" ></input><br>
-				<label for="rue">rue</label>
-				<input id="rue" type="text" name="rue" ></input><br>
-				<label for="ville">ville</label>
-				<input id="ville" type="text" name="ville" ></input><br>
-				<label for="codepostale">codepostale</label>
-				<input id="codepostale" type="NUMBER" name="codepostale" ></input><br>
+			</header>
 			</div>
-			<div id="vehicule">
-				<label for="Type">Type</label>
-				<input type="radio" name="T1">véhicule à moteur</input>
-				<input type="radio" name="T1">bicyclette</input><br>
-				<label for="bgcolor">Couleur de véhicule</label>
-				<input id="bgcolor" name="bgcolor" type="color"></input><br>
-				<label for="Marque">Marque</label>
-				<input id="Marque" type="text" name="Marque" ></input><br>
-				<label for="Description">Description</label>
-				<input id="Description" type="text" name="Description" ></input><br>
-			</div>
-			<br>
-			<button name="sauvegarder">sauvegarder</button>
 		</div>
+	</div>
+<!-- / header -->
+<!-- content -->
+	<div class="body5">
+		<div class="body6">
+			<div class="main">
+				<div class="wrapper">
+					<figure class="left"><img src="images/letter3.png" alt=""></figure>
+					<h2>inscrivez  <span>vouz</span></h2>
+notre site est une plateforme pour faire les déclarations de vole . la plus proche station de police va consulter votre déclaration à fin de retrouver votre article ,   
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="body7">
+		<div class="main">
+			<section id="content">
+				<div class="wrapper">
+					<article class="col2">
+						<div class="pad1">
+							
+							<h2>INSCRIRE</h2>
 
-	</form>
+						</div>	
+						<div class="box2">
+							<div class="box2_top">	
+								<div class="box2_bot">	
+									<div class="pad">
+										<div class="wrapper">
+											<figure class="left">
+											<div class="cols">
+												<form id="utilisateur">
+												    <div id="utilisateur">
+												    		<label for="cin">CIN</label>
+															<input id="cin" type="tel" name="CIN" class="input" required>
+															<label for="nom">NOM</label>
+															<input id="nom" type="text" name="nom"  class="input" required>
+															<label for="Prenom">Prenom</label>
+															<input id="Prenom" type="tel" name="Prenom" class="input" >
+															
+															<div id="adresse">
+															<label for="NUMERO">NUMERO</label>
+															<input id="NUMERO" type="NUMBER" class="input" name="NUMERO">
+															<label for="rue">rue</label>
+															<input id="rue" type="text" name="rue" class="input">
+															<label for="ville">ville</label>
+															<input id="ville" type="text" name="ville" class="input">
+															<label for="codepostale">codepostale</label>
+															<input id="codepostale" type="NUMBER" name="codepostale" class="input" min="1000">
+															</div>
 
-		<div id="droite">
+															<label for="telephone">Téléphone</label>
+															<input id="telephone" name="telephone" type="tel" class="input">
+															<button type="submit" >Submit</button>
+														
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</article>
+					<article class="col1 pad_left1">
+						
+						<div class="box1">
+							<div class="box1_bot">
+								<div class="box1_top">
+									<div class="pad">
+										<h2>Profile utilisateur</h2>
+										Sign up et consulter votre profile:
+										<form id="sign_up" method="post">
+											<div>
+												<input type="text" class="input">
+												<input type="password" class="input" placeholder="mot de pass">
+												<a href="#" onClick="document.getElementById('sign_up').submit()">Sign up</a>
+
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box1">
+							<div class="box1_bot">
+								<div class="box1_top">
+									<div class="pad">
+										<h2>Profile Agent</h2>
+										Sign up et consulter votre profile:
+										<form id="sign_up" method="post">
+											<div>
+												<input type="text" class="input">
+												<input type="password" class="input" placeholder="mot de pass">
+												<a href="#" onClick="document.getElementById('sign_up').submit()">Sign up</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
+	</div>
+<!-- / content -->
+<!-- footer -->
+	
+<!-- / footer -->
 		
-	<script src="model.js"></script>
+	
+<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
